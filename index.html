@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Navbar -->
+        <div class="topnav">
+            <div class="nav_links">
+                <img id="logo" src="img/logo.svg" alt="logo">
+                <button class="hamburger" id="hamburger">
+                    <img class="open" src="img/icon-hamburger.svg" alt="icon-hamburger">
+                    <img class="close" src="img/icon-close.svg" alt="icon-close">
+                </button>
+                <div class="nav_menu">
+                    <a href="#" target="_self">HOW WE WORK</a>
+                    <a href="#" target="_self">BLOG</a>
+                    <a href="#" target="_self">ACCOUNT</a>
+                    <a class="last_child" href="#" target="_self">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <!-- /Navbar -->
+        <!-- header -->
+        <div class="header">
+            <div class="header_text">
+                <p id="header_title">Humanizing <br>your insurance.</p>
+                <p id="header_info">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.</p>
+                <button class="header_button" id="modal_btn">VIEW PLANS</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal" id="modal_wndw">
+                <div class="modal-content">
+                    <span class="close_modal">&times;</span>
+                    <div class="insr_plans">
+                        <div class="mdlCard">
+                                <p>Whole</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima illum earum fugit odio, fugiat placeat quae dolor.</p>
+                                <p><i>$89 per month</i></p>
+                        </div>
+                        <div class="mdlCard">
+                            <div>
+                                <p>Universal</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima illum earum fugit odio, fugiat placeat quae dolor, sit ipsa.</p>
+                                <p><i>$109 per month</i></p>
+                            </div>
+                        </div>
+                        <div class="mdlCard">
+                            <div>
+                                <p>Variable</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima illum earum fugit odio, fugiat placeat quae dolor, sit.</p>
+                                <p><i>$129 per month</i></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- /Modal -->
+            <!-- Subscribe Pop-Up -->
+            <div class="popUp" id="popUp_wndw">
+                <div class="popUp-content">
+                    <span class="close_popUp">&times;</span>
+                    <p class="popUpTitle">Subscribe to our Newsletter</p>
+                    <p class="popUpBody">Signup for our weekly newsletter to stay up to date with our rates, offers, and informative articles on insurance.</p>
+                    <form class="popUpForm">
+                        <input class="popUpInput" id="eInput" type="email" name="email" placeholder="Enter your email" required>
+                        <input class="popUpSubmit" id="subBtn" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+            <!-- /Subscribe Pop-Up -->
+            <!-- Subscribed! -->
+            <div class="subbedPopUp" id="subbedPopUp_wndw">
+                <div class="subbedPopUp-content">
+                    <p class="subbedPopUpTitle">Thank you!</p>
+                    <p class="subbedPopUpBody">You have been subscribed.</p>
+                    <button class="okBtn">OK</button>
+                    </form>
+                </div>
+            </div>
+            <!-- /Subscribed! -->
+            <img class="header_img" src="img/image-intro-desktop.jpg" alt="family of four walking together">
+        </div>
+        <!-- /header -->
+    </header>
+    <!-- /HEADER -->
+    <main>
+        <div class=main>
+            <!-- About -->
+            <div class="about">
+                <div class="about_title">
+                <p>We're different</p>
+                </div>
+                <div class="about_sections">
+                    <div class="about_sec">
+                        <img class="about_svg" src="img/icon-snappy-process.svg" alt="snappy svg">
+                        <p class="section_title">Snappy Process</p>
+                        <p class="section_body">Our application process can be completed in minutes, not hours. Don't get stuck filling in tedious forms.</p>
+                    </div>
+                    <div class="about_sec">
+                        <img class="about_svg" src="img/icon-affordable-prices.svg" alt="dollar sign svg">
+                        <p class="section_title">Affordable Prices</p>
+                        <p class="section_body">We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
+                    </div>
+                    <div class="about_sec">
+                        <img class="about_svg" src="img/icon-people-first.svg" alt="people svg">
+                        <p class="section_title">People First</p>
+                        <p class="section_body">Our plans aren't full of conditions and clauses to prevent payouts. We make sure you're covered when you need it.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /About -->
+            <!-- More Info -->
+            <div class="more_info" id="more_info">
+                <p id="find_more">Find out more <br>about how we work</p>
+                <a id="more_info_link" href="#" target="_self">HOW WE WORK</a>
+            </div>
+            <!-- /More Info -->
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="foot_end">
+            <img id="logo_bottom" src="img/logo.svg" alt="logo">
+            <a id="sm_links" href="#" target="_self"><img src="img/icon-facebook.svg" alt="logo"></a>
+            <a id="sm_links" href="#" target="_self"><img src="img/icon-twitter.svg" alt="logo"></a>
+            <a id="sm_links" href="#" target="_self"><img src="img/icon-instagram.svg" alt="logo"></a>
+            <a id="sm_links" href="#" target="_self"><img src="img/icon-pinterest.svg" alt="logo"></a>
+        </div>
+        <div class="foot_nav">
+            <div class="fnav_section">
+                <p class="fanav_title">Our company</p>     
+                <a class="fanav_links" href="#" target="_self"><p>How we work</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>Why Insure?</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>View plans</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>Reviews</p></a>
+            </div>
+            <div class="fnav_section">
+                <p class="fanav_title">Help me</p>     
+                <a class="fanav_links" href="#" target="_self"><p>FAQ</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>Terms of use</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>Privacy policy</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>Cookies</p></a>
+            </div>
+            <div class="fnav_section">
+                <p class="fanav_title">Contact</p>    
+                <a class="fanav_links" href="#" target="_self"><p>Sales</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>Support</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>Live chat</p></a>
+            </div>
+            <div class="fnav_section">
+                <p class="fanav_title">Others</p>    
+                <a class="fanav_links" href="#" target="_self"><p>Careers</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>Press</p></a>
+                <a class="fanav_links" href="#" target="_self"><p>Licenses</p></a>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    
+    <!-- <script type="text/javascript" src="scroll.js"></script> -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
