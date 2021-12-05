@@ -85,14 +85,17 @@ window.addEventListener('click', (event) => {
 // Window Load Animtions
 const headerText = document.querySelector('.header_text');
 const headerImg = document.querySelector('.header_img');
+const mediaQuery768 = window.matchMedia('(min-width: 768px)');
 
 window.addEventListener('load', () => {
+    if (mediaQuery768.matches) {
     headerText.style.opacity = '1';
     headerText.style.transform = 'translateX(0px)';
     headerText.style.transition = '1000ms ease-in-out';
     headerImg.style.opacity = '1';
     headerImg.style.transform = 'translateY(0px)';
     headerImg.style.transition = '1000ms ease-in-out';
+    }
 });
 
 // Scroll Reveal Animations
@@ -101,17 +104,17 @@ const aboutSections = document.querySelector('.about_sections');
 const moreInfo = document.querySelector('#more_info');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY>=250) {
+    if (mediaQuery768.matches && window.scrollY>=250) {
         aboutTitle.style.opacity = '1';
         aboutTitle.style.transform = 'translateX(0px)';
         aboutTitle.style.transition = '1000ms ease-in-out';
-    };
-    if (window.scrollY>=350) {
+    }
+    if (mediaQuery768.matches && window.scrollY>=350) {
         aboutSections.style.opacity = '1';
         aboutSections.style.transform = 'translateX(0px)';
         aboutSections.style.transition = '1000ms ease-in-out';
     }
-    if (window.scrollY>=750) {
+    if (mediaQuery768.matches && window.scrollY>=750) {
         moreInfo.style.opacity = '1';
         moreInfo.style.transform = 'translateY(0px)';
         moreInfo.style.transition = '1000ms ease-in-out';

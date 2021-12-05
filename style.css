@@ -96,7 +96,6 @@ main {
     border: solid 1px white;
     padding: 10px 30px;
     cursor: pointer;
-    transition: 200ms box-shadow ease-in;
 }
 
 .header_button:hover {
@@ -485,7 +484,7 @@ footer {
         width: 100%;
         height: 100vh;
         position: fixed;
-        top: 9.5%;
+        top: 7%;
         padding-top: 2rem;
         flex-direction: column;
         text-align: center;
@@ -498,6 +497,11 @@ footer {
         font-size: 17px;
         text-transform: uppercase;
         margin: .5rem .8rem;
+        transition: none;
+    }
+
+    .nav_links a:hover {
+        color: white;
     }
 
     .last_child {
@@ -518,17 +522,23 @@ footer {
 
     .header_text {
         order: 2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         color: white;
         width: 100%;
         height: auto;
         padding: 0 10%;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
 
     #header_title {
         font-family: 'DM Serif Display', serif;
         font-size: 4rem;
         line-height: .8;
-        padding: 2rem 0;
+        padding: 2rem;
         margin-top: 7rem;
         margin-bottom: 1.5rem;
         text-align: center;
@@ -548,7 +558,7 @@ footer {
         border: solid 1px white;
         padding: 10px 30px;
         cursor: pointer;
-        margin-left: 33%;
+        margin: 0 auto
     }
     
     .header_img {
@@ -556,7 +566,10 @@ footer {
         width: 100%;
         height: auto;
         position: static;
-        top: 0;
+        top: 40%;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
 
     .about {
@@ -568,11 +581,17 @@ footer {
         font-size: 4rem;
         display: block;
         text-align: center;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
 
     .about_sections {
         display: flex;
         flex-direction: column;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
     
     .about_sec {
@@ -594,6 +613,9 @@ footer {
         width: 100%;
         height: auto;
         margin-top: 10rem;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
     
     #find_more {
@@ -690,12 +712,13 @@ footer {
     }
 
     .nav_menu.show {
+        z-index: 4;
         display: flex;
         background-color: rgb(29, 21, 51);
         width: 100%;
         height: 100vh;
         position: fixed;
-        top: 9.5%;
+        top: 7%;
         padding-top: 2rem;
         flex-direction: column;
         text-align: center;
@@ -708,6 +731,11 @@ footer {
         font-size: 17px;
         text-transform: uppercase;
         margin: .5rem .8rem;
+        transition: none;
+    }
+
+    .nav_links a:hover {
+        color: white;
     }
 
     .last_child {
@@ -728,17 +756,23 @@ footer {
 
     .header_text {
         order: 2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         color: white;
         width: 100%;
         height: auto;
         padding: 0 10%;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
 
     #header_title {
         font-family: 'DM Serif Display', serif;
         font-size: 4rem;
         line-height: .8;
-        padding: 2rem 0;
+        padding: 2rem;
         margin-top: 7rem;
         margin-bottom: 1.5rem;
         text-align: center;
@@ -758,7 +792,6 @@ footer {
         border: solid 1px white;
         padding: 10px 30px;
         cursor: pointer;
-        margin-left: 33%;
     }
     
     .header_img {
@@ -766,7 +799,10 @@ footer {
         width: 100%;
         height: auto;
         position: static;
-        top: 0;
+        top: 40%;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
 
     .about {
@@ -778,11 +814,17 @@ footer {
         font-size: 4rem;
         display: block;
         text-align: center;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
 
     .about_sections {
         display: flex;
         flex-direction: column;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
     
     .about_sec {
@@ -804,6 +846,9 @@ footer {
         width: 100%;
         height: auto;
         margin-top: 10rem;
+        transform: none;
+        transition: none;
+        opacity: 1;
     }
     
     #find_more {
@@ -881,6 +926,15 @@ footer {
         justify-content:space-between;
         padding-right: 2rem;
         text-align: center;
+    }
+
+    #find_more {
+        font-family: 'DM Serif Display', serif;
+        font-size: 3rem;
+        color: white;
+        padding: 1.5rem;
+        line-height: 1.2;
+        margin: 1rem 0;
     }
 
     footer {
