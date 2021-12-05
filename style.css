@@ -600,7 +600,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content:space-between;
-        padding-right: 2rem;
+        padding-right: 0;
         margin-bottom: 2rem;
         text-align: center;
     }
@@ -834,7 +834,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content:space-between;
-        padding-right: 2rem;
+        padding-right: 0;
         margin-bottom: 2rem;
         text-align: center;
     }
